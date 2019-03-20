@@ -1,3 +1,4 @@
+//Implementation of Rust in Kalman Filter Challenge
 extern crate nalgebra;
 extern crate rand;
 
@@ -8,7 +9,7 @@ pub struct KalmanFilter {
     // means of world state variables, and the current covariance matrix
     state: DVector<f64>,
     cov: DMatrix<f64>,
-    // control + old state -> state and error covariance matrix
+    // control + old state is equal to state and error covariance matrix
     update_trans: Box<Fn(&DVector<f64>, &DVector<f64>) -> DVector<f64>>,
     update_cov: DMatrix<f64>,
     // state to sensor readings, and error covariance matrix
