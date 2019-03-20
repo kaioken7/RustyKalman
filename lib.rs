@@ -1,7 +1,8 @@
-extern crate nalgebra as na;
+extern crate nalgebra;
 extern crate rand;
 
-use na::{DMatrix, DVector, new_identity, Inverse, Transpose};
+use nalgebra::{
+    DMatrix, DVector, new_identity, Inverse, Transpose};
 
 pub struct KalmanFilter {
     // means of world state variables, and the current covariance matrix
