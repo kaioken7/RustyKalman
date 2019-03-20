@@ -1,0 +1,4 @@
+https://doc.rust-lang.org/stable/book/second-edition/ for basics of Rust Progamming and Implementations with Limiting Factors.
+https://rust-lang-nursery.github.io/rust-cookbook for syntaxes and implementation of the codes.
+https://play.rust-lang.org/ for executing and developing the codes.
+https://github.com/rustindia/Rust-for-undergrads --- to know the conversion of C++ and C programs into Rust
