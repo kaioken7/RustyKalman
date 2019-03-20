@@ -1,4 +1,4 @@
-//Implementation of Rust in Kalman Filter Challenge
+//Implementation of Rust in Kalman Filter Challenge CODE-02
 extern crate nalgebra;
 extern crate rand;
 
