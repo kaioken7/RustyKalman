@@ -2,7 +2,7 @@
 name = "RustyKalman"
 version = "0.1.0"
 authors = ["Tarun Kumar <trn3274@gmail.com>"]
-edition = "2019"
+edition = "2018"
 
 [features]
 default = ["std", "serde-serialize"]
