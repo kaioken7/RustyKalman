@@ -3,7 +3,7 @@ extern crate nalgebra;
 extern crate rand;
 
 use nalgebra::{
-    DMatrix, DVector, new_identity, Inverse, Transpose};
+    DMatrix, DVector, Inverse, Transpose, new_id};
 
 pub struct KalmanFilter {
     state: DVector<f32>,
@@ -46,7 +46,7 @@ impl KalmanFilter {
                           &h.transpose() *
                           (&h * &cov_bar * &h.transpose() + &self.sensor_cov).inverse().unwrap();
         self.state = state_bar.clone() + &kalman_gain * (sensor_data - sensor_trans(&state_bar));
-        self.cov = (new_identity::<DMatrix<f32>>(state_bar.len()) - &kalman_gain * &h) * cov_bar;
+        self.cov = (new_id::<DMatrix<f32>>(state_bar.len()) - &kalman_gain * &h) * cov_bar;
     }
 }
 
